@@ -1,0 +1,13 @@
+{
+  "name": "chat-server-node",
+  "description": "chat server websocket",
+  "main": "sahil-chat-server.js",
+  "scripts": {
+    "start": "node sahil-chat-server.js"
+  },
+  "dependencies": {
+    "ejs": "~1.0.0",
+    "express": "~4.9.8",
+    "heroku": "^7.16.0"
+  }
+}
