@@ -21,8 +21,8 @@ nameColors.sort(function (a, b) {
 });
 
 var server = http.createServer((req, res) => {})
-server.listen(webSocketServerPort, () => {
-  console.log('server is listening at port: ' + webSocketServerPort);
+server.listen(process.env.PORT || webSocketServerPort, () => {
+  console.log('server is listening at port: ' + webSocketServerPort + 'or ' + process.env.PORT);
 })
 
 var socketServer = new webSocketServer({
